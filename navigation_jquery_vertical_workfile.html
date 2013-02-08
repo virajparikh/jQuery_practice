@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0065)file://localhost/Users/ascot21/Desktop/NSS/navigation_jquery.html -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style>
+body{
+	margin:0px;
+	padding:0px;
+}
+ul {
+ 	position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;	
+}
+ul li {
+	width: 200px;
+}
+
+ul li a {
+	display: block;
+    width: 100px;
+    height: 20px;
+    padding:10px 0px 10px 50px;
+    margin-left:-10px;
+	background:#00aeef;
+	color:white;
+	font-family:Arial;
+	font-style:bold;
+	text-decoration:none;
+	text-transform:uppercase;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid #aae1f6;
+}
+</style>
+<script type="text/javascript" src="../jquery-1.9.0.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#nav a').animate({
+			marginLeft: -125
+		}); //end animate - pushes menu to the left
+
+		$('#nav a').hover(function(){
+			$(this).stop().animate({
+				marginLeft: -10
+			});
+		},function(){
+			$(this).stop().animate({
+				marginLeft: -125
+			});
+		}); // 
+		
+		}); //end ready
+</script>
+
+
+</head>
+<body>
+
+<ul id="nav">
+<li><a href="">Item 1</a></li>
+<li><a href="">Item 2</a></li>
+<li><a href="">Item 3</a></li>
+<li><a href="">Item 4</a></li>
+<li><a href="">Item 5</a></li>
+<li><a href="">Item 6</a></li>
+</ul>
+
+
+
+</body></html>

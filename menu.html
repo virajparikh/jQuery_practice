@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file://localhost/Users/ascot21/Desktop/NSS/navigation_jquery.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<style>
+
+ul {
+  margin:0px;
+  padding:0px;
+  list-style: none;
+}
+ul li {
+  float:left;
+}
+
+ul li a {
+  display:block;
+  background:#00aeef;
+  padding:10px 20px;
+  color:white;
+  font-family:Arial;
+  font-style:bold;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+ul li a:hover {
+  background:gray;
+}
+
+ul li ul li {
+  float:none;
+}
+
+.bggreen {
+  background: green;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('.dropdown').hide();
+  $('#nav li').hover(
+    function(){
+    $(this).find('.dropdown').fadeIn('slow');
+    },
+    function(){
+    $(this).find('.dropdown').fadeOut('slow');
+    });//end of hover
+
+  $('#changebg').click(function(){
+    $('body').addClass("bggreen");
+    });//end click
+
+  $('#changebg2').click(function(){
+    $('body').removeClass("bggreen");
+    });//end click
+
+
+
+});//end doc ready
+
+</script>
+
+
+</head>
+<body>
+
+<ul id="nav">
+  <li><a href="#">Parent 01</a></li>
+  <li><a href="#">Parent 02</a>
+    <ul class="dropdown">
+      <li><a href="#">Item 01</a></li>
+      <li><a href="#" class="selected">Item 02</a></li>
+      <li><a href="#">Item 03</a></li>
+    </ul>
+    <div class="clear"></div>
+  </li>
+  <li><a href="#">Parent 03</a>
+  <ul class="dropdown">
+    <li><a href="#">Item 04</a></li>
+    <li><a href="#">Item 05</a></li>
+    <li><a href="#">Item 06</a></li>
+    <li><a href="#">Item 07</a></li>
+  </ul>
+
+  </li>
+  <li><a href="#">Parent 04</a></li>
+</ul>
+
+<button id="changebg">Click Me</button>
+<button id="changebg2">Click Me</button>
+
+
+
+</body></html>

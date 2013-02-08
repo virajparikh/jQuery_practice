@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Mentor Bio Page</title>
+
+<style type="text/css">
+body {font-family:Helvetica;}
+p {font-size: 13px;}
+h1 {
+	background: #363636 url(open.png) no-repeat 0 11px;
+	padding: 10px 0 0 25px;
+	cursor: pointer;
+	margin:0px;
+	color:#e1e1e1;
+	font-size:130%;
+}
+h1.close {
+	background-image: url(close.png);
+}
+.wrapper {
+	width:960px;
+	margin:auto;
+}
+.answer {
+	padding:10px;
+	width:940px;
+	background:#f0f0f0;
+}
+#mentor:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#mentor {
+   display:block;
+   clear:both;
+}
+#mentor aside {
+	width:190px;
+	float:left;
+        padding-right:10px;
+}
+#mentor aside img {
+	width:190px;
+}
+#mentorInfo {
+	width:740px;
+	float:left;
+}
+#mentor h2, #mentor h3, #mentor h4 {
+  margin:0px;
+}
+#mentor h3 {font-style:italic;}
+#mentor aside p {font-size:12x;margin-bottom:0px;}
+
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.answer').hide();
+		$("h1").click(function(){
+		  $(this).next().slideToggle();
+		  $(this).toggleClass('close');
+		}); //ends click
+	});//end ready
+
+</script>
+</head>
+<body>
+<div class="wrapper">
+<div class="content">
+	<div class="main">
+<span style="margin-bottom:30px;">A One Page Bio Section</span>
+	<h1>Matt Mueller</h1>
+      <div class="answer">
+        <article id="mentor">
+		<aside>
+			<img src="http://a0.twimg.com/profile_images/1253373153/me.png">
+			<p>Business Website: <a href="http://check.in">checkd.in</a></p>
+			<p>Personal Website: <a href="http://themattmueller.com/">themattmueller.com</a></p>
+			<p>Twitter: <a href="http://twitter.com/matt_mueller">@matt_mueller</a></p>
+			<p>Github: <a href="http://github.com/mattmueller">http://github.com/mattmueller</a></p>
+      		</aside>
+		<article id="mentorInfo">
+			<h2 id="mentorName">Matt Mueller</h2>
+			<h4 id="mentorPosition">Co-Founder/CTO | checkd.in</h3>
+			<p>I've been doing general web design and development for longer than I can remember. I began with old school WYSIWYG editors like Front Page, progressed to hand-written HTML/CSS/JS, moved on to PHP and WordPress, then finally discovered Ruby (and Rails) in 2007 when I began working at Change Healthcare.  I've tried not to write anything else ever since.  Along the way I've picked up other skills in the web stack like server configuration, deployment, MySQL, PostgreSQL, and more.  As of the past few years I have a particular fondness for integrating with existing web APIs as well as building apps and services that have their own APIs.</p>
+
+		<p>Despite the fact that I was always tinkering with and interested in web development it became the way I make my living almost by accident.  I did not study Computer Science in college and have no formal training.  My goal in mentoring students at the Nashville Software School is to help them overcome some of the frustrations and roadblocks I encountered as I self-taught myself a number of these skills.  I was lucky enough to have a number of great mentors help me along the way, and I want to do the same for others.</p>
+
+		<p>At the end of the day I'd love to see more developers in Nashville trying to build great new things, whether those be hobby projects, new businesses/services, or just great code inside the organization where they work.</p>
+		</article>
+		</article>
+      </div>
+      <h1>Jacques Woodcock</h1>
+      <div class="answer">
+        <article id="mentor">
+		<aside>
+			<img src="https://si0.twimg.com/profile_images/1875029233/photo.JPG">
+			<p>Business Website: <a href="http://www.kitportal.com">www.kitportal.com</a></p>
+			<p>Personal Website: <a href="http://jacqueswoodcock.tumblr.com">jacqueswoodcock.tumblr.com/</a></p>
+			<p>Twitter: <a href="http://twitter.com/jacques_thekit">@jacques_thekit </a></p>
+      		</aside>
+		<article id="mentorInfo">
+			<h2 id="mentorName">Jacques Woodcock</h2>
+			<h4 id="mentorPosition"> President | Kite, Inc.</h3>
+			<p>I am a generalist– albeit one with pretty deep knowledge, but still a generalist of web technologies. I have done everything from UI/UX, front-end design, to back-end design. This covers HTML, CSS, JavaScript, ActionScript, Lingo, Cold Fusion, PHP, MySQL, SQL and others.</p>
+
+<p>I am currently focusing on technical strategy, helping companies with business models architecture technical solutions and execution plans.</p>
+
+<p>The reason for my interest in mentoring students from the Nashville Software School is purely selfish. I want Nashville to have one of the top technology communities in the nation and to have that, we need to be growing talent from within and not relying on importing it every time a company needs to hire. Please I love helping people learn.</p>
+		</article>
+		</article>
+      </div>
+      <h1>Dale Rogers</h1>
+      <div class="answer">
+		<article id="mentor">
+			<aside>
+				<img src="https://lh5.googleusercontent.com/-xcYJlpoUa18/AAAAAAAAAAI/AAAAAAAAABI/_2LXbkA2b-Y/s250-c-k/photo.jpg">
+				<p>Personal Website: <a href="http://www.dalerrogers.com">http://www.dalerrogers.com</a></p>
+				<p>Business Website: <a href="http://www.nscc.edu">www.nscc.edu</a></p>
+				<p>Twitter: <a href="http://twitter.com/dalerrogers">@dalerrogers</a></p>
+				<p>Github: <a href="https://github.com/dalerrogers">github.com/dalerrogers</a></p>
+	      	</aside>
+			<article id="mentorInfo">
+				<h2 id="mentorName">Dale Rogers</h2>
+				<h4 id="mentorPosition">Assistant Professor, Multimedia Design | Nashville State Community College</h3>
+				<p>	I am currently an Assistant Professor at Nashville State Community College where I am beginning my eighth year as a full-time faculty member. At NSCC, I am the Program Coordinator for the Multimedia Design Concentration and am responsible for ensuring the curriculum meets the requirements for preparing students for a career in multimedia design. I teach HTML, CSS, basic Javascript, Adobe Flash, Pre-Production (flowcharting, storyboarding, and scripting), and the final Capstone class for both the Multimedia and Web Design concentrations.</p>
+
+					<p>Ending in the Spring semester of 2012, I was the Co-PI (Co Principle Investigator) for a National Science Foundation grant that focused on bridging the chasm between the academic classroom and industry. The method developed by the grant is known as Problem-based Case Learning (http://www.makinglearningreal.org). Using PBCL as my academic foundation, my capstone students function as a design team creating deliverables for local non-profits that partner with us. That is what caught my attention with the Nashville Software School.</p>
+
+					<p>With a M.Ed. in eLearning Design and Technology, my professional interest is in using technology to teach. I've been teaching software applications professionally since 1989 when I became a corporate trainer for the Intergraph Corporation in Huntsville, AL. There I developed and taught a five-day class in CAD to engineers, architects, and project managers. The package, Project Engineer Pipe, was a commercial Piping Design Package that utilized 3-D CAD. The graphic elements also had user data that pointed to relational database records using Oracle and Informix. I was required to understand SQL to create reports and Bill of materials. The entire system was on high-end unix systems so I was introduced to the Unix OS, and dabbled a bit in Shell scripting. I learned that I have a passion and expertise in teaching highly technical concepts to new students.</p>
+
+					<p>I moved to Nashville in the mid 90s and worked for a local corporate training firm teaching OS, Office Production, and Database Design (MSAccess). That's when I began designing web sites.</p>
+
+					<p>What I bring to the Nashville Software School is a long history in both corporate and academic instruction mixed with interspersed years of working in the field, a solid foundation in Web standards technology and design, and academic credentials to ensure good educational practice.</p>
+			</article>
+			</article>
+      </div>
+</div>
+</div>
+</div>
+</body>
+</html>
